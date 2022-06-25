@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Given an image, this page will display a text version using braille as 1-bit pixels">
+	<title>Image to Braille</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="braille.js"></script>
+	<script src="dithering.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<textarea id="text" readonly></textarea>
+	<div id="options">
+		<div><a href="https://github.com/505e06b2/Image-to-Braille" target="_blank">源代碼</a></div>
+		<div><input id="file" type="file" accept="image/*"></div>
+
+		<div title="Dark 背景"><input type="checkbox" id="darktheme"> Dark 背景</div>
+		<div title="填滿"><input type="checkbox" id="inverted"> 填滿</div>
+		<div title="稍微調整"><input type="checkbox" id="dithering"> 稍微調整</div>
+		<div title="去除背景"><input type="checkbox" id="monospace"> 去除背景</div>
+    <div title="Mod">
+			<select id="greyscale_mode">
+        <option value="luminance">預設</option>
+        </select>
+    </div>
+		<div>
+			<input type="number" min="2" value="50" step="2" max="500" id="width">
+			大小
+		</div>
+		<div>
+			<button id="clipboard">複製</button>
+		</div>
+		<div>
+		</div>
+	</div>
+</body>
+</html>
+<!---------------------------- 社群 ------------------------------>
+<html>
+<body>
+<form>
+    <a href="https://www.facebook.com/DJ.Tira.tw">
+        <input type="button" value="Facebook"> <br>
+      <a href="https://discord.gg/3S5BgMTx47">
+        <input type="button" value="Discord"> <br>
+        <a href="https://www.youtube.com/c/Tiratw/">
+        <input type="button" value="YouTube"> <br>
+        <a href="https://tsrv.ga/">
+        <input type="button" value="官網">
+    </a>
+</form>
+</body>
+</html>
